@@ -5,8 +5,10 @@ import Button from 'react-bootstrap/Button'
 
 function CustomForm() {
     let sub = ''
+    let sub2 = ''
     function agarrarInfo(event) {
         console.log(event.target.value)
+        sub2 = event.target.value
     }
 
     function agarrarInfo2(event) {
@@ -15,7 +17,7 @@ function CustomForm() {
     }
 
     function alertaInfo() {
-        alert(sub)
+        alert(`${sub} ${sub2}`)
     }
 
     return (
